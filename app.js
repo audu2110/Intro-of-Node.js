@@ -26,3 +26,19 @@ const server=http.createServer((req,res)=>{
 server.listen(4000)
 
 
+
+
+const http= require('http');
+const server=http.createServer((req,res)=>{
+    const url=req.url;
+    if(url==='/home'){
+        console.log('Welcome home');
+    }
+    else if(url==='/about'){
+        console.log('Welcome to About Us page');
+    }
+    else if(url==='/node'){
+        console.log(' Welcome to my Node Js project');
+    }
+});
+server.listen(5000)
